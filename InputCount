@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void)
+{
+	char ch;
+	int symb=-1;
+	int words=1;
+	int line=0;
+	
+	printf("Enter something: ");
+	while ((ch = getchar()) != EOF) 
+  {
+		putchar(ch);
+		symb++;
+		
+			if(ch == ' ')
+      {
+				words++;
+			}
+			if(ch == '\n')
+      {
+				line++;
+			}
+			
+	}
+	printf ("\n");
+	printf("You entered %i characters, %i words & %i lines.", symb, words, line);
+	printf("\n");
+}
